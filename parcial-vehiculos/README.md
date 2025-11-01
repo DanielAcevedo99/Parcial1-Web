@@ -18,7 +18,7 @@
 
 ---
 
-## ⚙️ Requisitos previos
+## Requisitos previos
 
 Para ejecutar el proyecto, se requiere contar con:
 
