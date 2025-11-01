@@ -1,0 +1,14 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr; /* tabla izquierda, card derecha */
+  gap: 24px;
+}
+.tabla { overflow-x: auto; }
+.t { width: 100%; border-collapse: collapse; }
+.t thead th {
+  text-align: left; padding: 10px; background: #2f3a43; color: #fff;
+}
+.t tbody td { padding: 12px; border-bottom: 1px solid #e0e0e0; }
+.t tbody tr { cursor: pointer; }
+.t tbody tr:hover { background: #f6f8fa; }
+.detalle { border: 1px solid #999; border-radius: 6px; padding: 14px; background: #fafafa; }

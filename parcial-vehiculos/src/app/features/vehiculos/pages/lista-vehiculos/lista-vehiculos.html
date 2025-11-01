@@ -1,0 +1,27 @@
+<div class="layout">
+  <section class="tabla">
+    <table class="t">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Marca</th>
+          <th>Línea</th>
+          <th>Modelo</th>
+        </tr>
+      </thead>
+      <tbody *ngIf="vehiculos$ | async as vehiculos; else cargando">
+        <tr *ngFor="let v of vehiculos; index as i" (click)="seleccionar(v)">
+          <td>{{ i + 1 }}</td>
+          <td>{{ v.marca }}</td>
+          <td>{{ v.linea }}</td>
+          <td>{{ v.modelo }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <ng-template #cargando><p>Cargando vehículos…</p></ng-template>
+  </section>
+
+  <aside class="detalle" *ngIf="seleccionado() as v">
+    <app-vehiculo-card [vehiculo]="v"></app-vehiculo-card>
+  </aside>
+</div>

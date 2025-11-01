@@ -1,0 +1,27 @@
+<header style="padding-top:10px;">
+  <!-- contenedor centrado y con el mismo ancho que el contenido -->
+  <div style="max-width:1100px; margin:0 auto; padding:0 16px;">
+    <!-- Título -->
+    <h1 style="font-size:1.6rem; font-weight:700; margin:0; color:#000; font-family:Arial, Helvetica, sans-serif;">
+      TuSegundazo.com
+    </h1>
+
+    <!-- Línea bajo el título (solo debajo del texto) -->
+    <div style="height:1px; background:#cfcfcf; margin:10px 0 12px;"></div>
+
+    <!-- Banner dentro del mismo ancho (no full-width de la pantalla) -->
+    <img
+      src="/assets/images/banner.png"
+      alt="Banner TuSegundazo"
+      style="width:100%; max-height:220px; object-fit:cover; display:block;"
+    >
+  </div>
+</header>
+
+<main style="max-width:1100px; margin:0 auto; padding:16px;">
+  <router-outlet></router-outlet>
+</main>
+
+<footer style="max-width:1100px; margin:24px auto; padding:12px 16px; font-size:14px; color:#555; text-align:center;">
+  Contact us: +57 3102105253 – info@tusegundazo.com – @tusegundazo
+</footer>

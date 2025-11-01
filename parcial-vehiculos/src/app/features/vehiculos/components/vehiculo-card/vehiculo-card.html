@@ -1,0 +1,10 @@
+<h3 style="text-align:center; margin-top:0;">{{ vehiculo.marca }} {{ vehiculo.linea }}</h3>
+<div style="display:flex; justify-content:center; margin:10px 0;">
+  <img [src]="vehiculo.imagen" alt="{{vehiculo.marca}} {{vehiculo.linea}}" style="max-width:260px; border-radius:10px;">
+</div>
+<ul style="list-style:none; padding-left:0; margin:0;">
+  <li>→ Kilometraje: {{ vehiculo.kilometraje | number }}</li>
+  <li>→ Color: {{ vehiculo.color }}</li>
+  <li>→ Referencia: {{ vehiculo.referencia }}</li>
+  <li>→ Modelo: {{ vehiculo.modelo }}</li>
+</ul>
